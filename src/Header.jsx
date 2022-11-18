@@ -11,7 +11,7 @@ export const Header = () => {
             <button className="header_nav_bar_item">Drive</button>
             <button className="header_nav_bar_item">Explore</button>
             <button className="header_nav_bar_item">Help</button>
-            <button className="header_nav_bar_item">Login</button>
+            <button className="header_nav_bar_item">Log in</button>
         </nav>
     </header>
     )
