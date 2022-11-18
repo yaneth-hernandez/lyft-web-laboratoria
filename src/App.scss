@@ -8,6 +8,7 @@
 body{
   width: 100%;
   height: 100vh;
+  background: url('../assets/hero.gif') no-repeat 100%/cover;
 }
 
 #root{
@@ -40,8 +41,8 @@ body{
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  background: url('../assets/hero.gif') no-repeat 100%/cover;
-  padding-top: 60px;
+  // background: url('../assets/hero.gif') no-repeat 100%/cover;
+  // padding-top: 60px;
    &_containerForm{
       width: 40%;
       background: #fff;
