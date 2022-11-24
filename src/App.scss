@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+
 }
 
 body{
@@ -16,10 +17,6 @@ body{
   justify-content: space-between;
 }
 
-// #root{
-//   background: url('../assets/hero.gif') no-repeat 100%/cover;
-//   background-position: -1px -129px;
-// }
 //HEADER
 .header_container{
   width: 100%;
@@ -62,20 +59,27 @@ body{
 // SECTION
 .sectionInitial{
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+    display: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    
+  
   //flex-direction: column;
     &_containerForm{
-      width: 40%;
+      width: 32%;
       background: #fff;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       gap: 20px;
+      padding: 17px;
   }
+}
+.sectionInitial.is-open{
+  display: flex;
 }
 
 .sectionInitial_boxButton--become:hover {
@@ -84,14 +88,22 @@ body{
   color:white
 }
 
+.sectionInitial_input{
+  border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 284px;
+}
+
+
 .containerInformation{
-  transform: translateX(-18px) translateY(73px);
+  transform: translateX(-18px) translateY(406px);
     background-image: linear-gradient(#76278F, #2B1E66);
-    
     width: 100vw;
     height: 618px;
     filter: blur(6px);
     box-shadow: 70px 8px 51px #9659a9;
+    position: inherit;
 }
 
 .tittle{
@@ -102,7 +114,7 @@ body{
 .information{
   position: absolute;
   z-index: 999;
-  transform: translateX(117px) translateY(-439px);
+  transform: translateX(117px) translateY(-112px);
   width: 85%;
   display: flex;
   color: #fff;
@@ -115,7 +127,6 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
-
 
 .phone{
   height: 430px;

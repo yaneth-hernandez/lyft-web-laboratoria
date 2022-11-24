@@ -1,8 +1,8 @@
 import React from "react";
 import logo from "../assets/logo-white.png"
 
-export const Header = () => {
-    return(
+export const Header = ({isOpen}) => {
+       return(
     <header className="header_container">
         <figure className="header_logo_container">
             <img src={logo} className="header_logo"/>
@@ -11,7 +11,7 @@ export const Header = () => {
             <button className="header_nav_bar_item">Drive</button>
             <button className="header_nav_bar_item">Explore</button>
             <button className="header_nav_bar_item">Help</button>
-            <button className="header_nav_bar_item">Log in</button>
+            <button className="header_nav_bar_item" onClick={isOpen}>Log in</button>
         </nav>
     </header>
     )

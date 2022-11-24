@@ -1,17 +1,18 @@
 import React from 'react'
 import { Header } from './Header'
-import { SectionInitial } from './SectionInitial'
+import { Modal } from './Modal'
 import { Information } from './Information'
+import { useModal } from './useModal'
 import './App.scss'
 
 
 function App() {
-  //const [count, setCount] = useState(0)
+  const [isOpenModalLogin, openModalLogin, closeModalLogin] = useModal(false)
 
   return (
     <React.Fragment>
-      <Header/>
-      <SectionInitial/>
+      <Header isOpen={openModalLogin}/>
+      <Modal isOpen={isOpenModalLogin} closeModal={closeModalLogin}/>
       <Information/>
     </React.Fragment>
   )
