@@ -1,7 +1,9 @@
 import React from 'react'
 import { Header } from './Header'
 import { SectionInitial } from './SectionInitial'
+import { Information } from './Information'
 import './App.scss'
+
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -10,6 +12,7 @@ function App() {
     <React.Fragment>
       <Header/>
       <SectionInitial/>
+      <Information/>
     </React.Fragment>
   )
 }
